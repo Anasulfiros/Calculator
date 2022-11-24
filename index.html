@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="calcu">
+
+        <img id="logo" src="logo.png" alt="logo">
+        <div>
+            <input id="display" type="text" placeholder="0">
+        </div>
+        <div class="inputs">
+
+            <div class="rows">
+                <button id="clrBtn" onclick="clrScreen()" class="btn grey">AC</button>
+                <button onclick="btnClick('√')" class="btn grey">√</button>
+                <button onclick="btnClick('%')" class="btn grey">%</button>
+                <button onclick="btnClick('/')" class="btn orange">÷</button>
+            </div>
+            <div class="rows">
+                <button onclick="btnClick(7)" class="btn darkgrey">7</button>
+                <button onclick="btnClick(8)" class="btn darkgrey">8</button>
+                <button onclick="btnClick(9)" class="btn darkgrey">9</button>
+                <button onclick="btnClick('*')" class="btn orange">x</button>
+            </div>
+            <div class="rows">
+                <button onclick="btnClick(4)" class="btn darkgrey">4</button>
+                <button onclick="btnClick(5)" class="btn darkgrey">5</button>
+                <button onclick="btnClick(6)" class="btn darkgrey">6</button>
+                <button onclick="btnClick('-')" class="btn orange">-</button>
+            </div>
+            <div class="rows">
+                <button onclick="btnClick(1)" class="btn darkgrey">1</button>
+                <button onclick="btnClick(2)" class="btn darkgrey">2</button>
+                <button onclick="btnClick(3)" class="btn darkgrey">3</button>
+                <button onclick="btnClick('+')" class="btn orange">+</button>
+            </div>
+            <div class="rows">
+                <button onclick="btnClick(0)" class="btn darkgrey big">0</button>
+                <button onclick="btnClick('.')" class="btn darkgrey align">.</button>
+                <button onclick="eqClick()" class="btn orange" >=</button>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
